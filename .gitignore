@@ -1,0 +1,7 @@
+# private notes used while building — not part of the site
+PROFILE.md
+CONTRACT.md
+.claude/
+dist/
+tools/
+.DS_Store

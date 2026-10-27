@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>画面の向こう</title>
+<meta name="description" content="A 1986 television, a one-car train, and every world you love. For Devansh.">
+<meta name="theme-color" content="#07070a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DotGothic16&family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;700;800&family=Mochiy+Pop+One&family=Noto+Serif+JP:wght@400;600;900&family=Rubik+Glitch&family=Shippori+Mincho+B1:wght@800&family=Silkscreen&family=UnifrakturCook:wght@700&family=VT323&family=Zen+Kaku+Gothic+New:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/shell.css">
+</head>
+<body>
+<div id="stage"></div>
+<div id="crt" aria-hidden="true"><div class="crt-scan"></div><div class="crt-grain"></div><div class="crt-vig"></div></div>
+<div id="hud" aria-live="polite">
+  <button id="board" class="hud-btn" hidden title="電車に戻る (Esc)"><span class="board-ico"></span><span class="board-jp">乗車</span><span class="board-en">board</span></button>
+  <div id="lights" title="光の玉"></div>
+  <button id="lang" class="hud-btn hud-mini" aria-label="language">日本語</button>
+  <button id="mute" class="hud-btn hud-mini" title="ミュート (M)" aria-label="mute">♪</button>
+  <div id="toast"></div>
+</div>
+<div id="veil"></div>
+<div id="gate">
+  <div class="gate-inner">
+    <div class="gate-jp">ヘッドホンで。</div>
+    <div class="gate-en">best with headphones — your DT 770s will do.</div>
+    <div class="gate-langs" role="group" aria-label="language"><button data-l="ja">日本語</button><button data-l="en">English</button></div>
+    <ul class="gate-info" aria-label="before you begin"></ul>
+    <div class="gate-hint">クリックして、はじめる</div>
+  </div>
+</div>
+<noscript>この作品には JavaScript が必要です。</noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
